@@ -7,10 +7,10 @@ public class SearchEngine {
 	public static void main(String[] args) {
 		try {
 			System.out.println("*******************************************");
-			System.out.println("\tWelcome to the Search Engine");
+			System.out.println("\tNEWS Finder");
 			System.out.println("*******************************************");
 			
-			System.out.println("\nPlease enter the URL to crawl: \n\n(To continue with our default URL "+Constants.CRAWLER_DEFAULT_URL+", press 'ENTER')");
+			System.out.println("\nPlease enter any news website to crawl: \n\n(To continue with our default URL "+Constants.CRAWLER_DEFAULT_URL+", press 'ENTER')");
 			
 			Scanner sc = new Scanner(System.in);
 		

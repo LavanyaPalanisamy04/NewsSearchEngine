@@ -1,6 +1,7 @@
 package search;
 
 import java.io.File;
+
 import java.util.HashSet;
 import java.util.Set;
 import org.jsoup.Connection;
@@ -35,8 +36,8 @@ public class Crawler {
 	}
 
 	private static void crawl(int level, String url) {
-		if (level <= Constants.CRAWLING_DEPTH) {  //layers of web pages crawled
-			Document doc = requestPage(url);
+		if (level <= Constants.CRAWLING_DEPTH) { // layers of web pages crawled
+			Document doc = requestPage(url); // get HTML content of the web page
 			if (doc != null) {
 				HTMLToText.writeHTMLDocument(doc); // Save HTML Pages
 				for (Element link : doc.select("a[href]")) {

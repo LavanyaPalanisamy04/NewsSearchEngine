@@ -114,7 +114,7 @@ public class Searcher {
 					continue;
 				}
 				
-				//Auto suggestion
+				/************* Auto suggestion *******************/
 				ArrayList<String> autoSuglist = AutoSuggestion.startSuggestion(word);
 				if (autoSuglist.contains(word)) {
 					autoSuglist.remove(word);
